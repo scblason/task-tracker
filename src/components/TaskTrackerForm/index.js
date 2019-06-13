@@ -33,7 +33,7 @@ export class TaskTrackerForm extends React.Component {
     onChange = e => this.setState({ [e.target.name]: e.target.value, formError: false })
 
     validate = ({ name, description, estimate }) => {
-        return name.length !== 0 && description.length !== 0 && estimate.length !== 0;
+        return name.length !== 0 && description.length !== 0 && estimate.length !== 0 && parseInt(estimate) > 0;
     }
 
     render() {
@@ -55,7 +55,7 @@ export class TaskTrackerForm extends React.Component {
                 </div>
                 <div className="row">
                     <button className="button-primary" onClick={this.onNewTask} >Add</button>
-                    {this.state.formError && <span className="error">All fields are mandatory</span>}
+                    {this.state.formError && <span className="error">There are invalid fields. Please, try again.</span>}
                 </div>
             </div>
         );
