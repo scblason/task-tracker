@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "First task",
+      "description": "The first task of the tracker",
+      "state": 2,
+      "estimate": 6
+    },
+    {
+      "id": 2,
+      "name": "Second task",
+      "description": "The second task of the tracker",
+      "state": 1,
+      "estimate": 12
+    },
+    {
+      "id": 3,
+      "name": "Third task",
+      "description": "The third task of the tracker",
+      "state": 3,
+      "estimate": 6
+    },
+    {
+      "id": 4,
+      "name": "Fourth task",
+      "description": "The fourth task of the tracker",
+      "state": 1,
+      "estimate": 12
+    },
+    {
+      "id": 5,
+      "name": "Fifth task",
+      "description": "The fith task of the tracker",
+      "state": 2,
+      "estimate": 6
+    }
+  ]
+}
